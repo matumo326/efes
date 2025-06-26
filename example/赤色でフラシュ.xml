@@ -1,0 +1,93 @@
+<xml xmlns="https://bipes.net.br">
+  <workspace>
+    <field name="DEVICE">WS_zero</field>
+    <field name="TIMESTAMP">1676528162828</field>
+    <freeboard><![CDATA[{"version":1,"allow_edit":true,"plugins":[],"panes":[],"datasources":[],"columns":3}]]></freeboard>
+  </workspace>
+  <block type="roop" id="]PU$QdTQ3@F!EoM1vE2g" x="-512" y="-1062">
+    <statement name="statements">
+      <block type="neopixel_control_all" id="3:1$L#-$m*R{a4,aguxv">
+        <value name="color">
+          <block type="neopixel_color_numbers" id="9:~zm+IdE]z-W[THEU]9">
+            <value name="red">
+              <shadow type="math_number" id="/+V/RP(^S@3yJqUBSH]U">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <value name="green">
+              <shadow type="math_number" id="-Us*a@i{_5JgpCJ-DCx3">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="blue">
+              <shadow type="math_number" id="0eA2|MtZ/6|[[]t/Tw1=">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="neopixel_write" id="RR4h=RHOKbl!I1Eg!#;1">
+            <next>
+              <block type="delay_ms" id="`IUJ4J|GC-K!m6Iiy,Zq">
+                <value name="time">
+                  <shadow type="math_number" id="kv8mEjW2*inOAnN(#-[m">
+                    <field name="NUM">50</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="neopixel_control_all" id="`k9xDG8?7El{3+7,wmP(">
+                    <value name="color">
+                      <block type="neopixel_color_numbers" id="~_hQ@Es}x%I,/O!FN47x">
+                        <value name="red">
+                          <shadow type="math_number" id="I^4S]Osg:vNoy}THZ{}@">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="green">
+                          <shadow type="math_number" id="jdU8yXW[4m?Wl%0d):)b">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="blue">
+                          <shadow type="math_number" id="45opk.McNuGUes%u_YUB">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="neopixel_write" id="ryo8Z}.L!*#{/xJz$oQ$">
+                        <next>
+                          <block type="delay" id="75pT$~{BI-@FJ{E_Z=Zd">
+                            <value name="time">
+                              <shadow type="math_number" id="M91kA*pD%3_~KnXHGQ]e">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="project_metadata" id=")cD(}hwpp_v^-c7GuOf;" x="-188" y="-487">
+    <value name="project_author">
+      <shadow type="text" id="-91f!d/`W*;),EB`;EY(">
+        <field name="TEXT">user</field>
+      </shadow>
+    </value>
+    <value name="project_description">
+      <shadow type="text" id="1{oBx_+i+Dr3SxQHc@XW">
+        <field name="TEXT">赤色でフラシュ</field>
+      </shadow>
+    </value>
+  </block>
+</xml>

@@ -1,0 +1,182 @@
+<xml xmlns="https://bipes.net.br">
+  <workspace>
+    <field name="DEVICE">WS_zero</field>
+    <field name="TIMESTAMP">1676529757308</field>
+    <freeboard><![CDATA[{"version":1,"allow_edit":true,"plugins":[],"panes":[],"datasources":[],"columns":3}]]></freeboard>
+  </workspace>
+  <variables>
+    <variable id="1Y!?U7/9.cL:2-^KHqP3">col</variable>
+    <variable id="px7f4]a{l)sC1LARI=tD">i</variable>
+  </variables>
+  <block type="variables_set" id="db;;g(Z6R?B?GK(xK)J9" x="-637" y="-562">
+    <field name="VAR" id="1Y!?U7/9.cL:2-^KHqP3">col</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id=".wvJdFv/cPPp`ld+n+7*">
+        <mutation items="3"></mutation>
+        <value name="ADD0">
+          <block type="neopixel_color_numbers" id="EdLxM$QSiW)`uxFbs?w~">
+            <value name="red">
+              <shadow type="math_number" id="!?sSj``:DuYv=@^,ou^I">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <value name="green">
+              <shadow type="math_number" id="|`E1g9^`c*OKz.9t7,SJ">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="blue">
+              <shadow type="math_number" id="0$d!%ulTn-H`c7IoKH11">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="neopixel_color_numbers" id="a3(%d`$v,-rnD[ZyMU^v">
+            <value name="red">
+              <shadow type="math_number" id="RH`+5kwjb%NZJBaGbkJC">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="green">
+              <shadow type="math_number" id=",I?$JVvfpjY;#^!uA|#L">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <value name="blue">
+              <shadow type="math_number" id="dv0Z,!h?8l5mcv~0ozer">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="neopixel_color_numbers" id="8lFIL)aH%1/E^Wi+[S2k">
+            <value name="red">
+              <shadow type="math_number" id="8yqir!ApWZdR(d!/;0,l">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="green">
+              <shadow type="math_number" id="Z$Vmplz+$]VLr;%0HB~P">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="blue">
+              <shadow type="math_number" id="koP:cHfwnoc?5%FW|2dQ">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="roop" id="YIgRaE:/Y;h?)_Jup!~4">
+        <statement name="statements">
+          <block type="controls_for" id="y:.A(MIxn+YLaempFGdM">
+            <field name="VAR" id="px7f4]a{l)sC1LARI=tD">i</field>
+            <value name="FROM">
+              <shadow type="math_number" id="Ww}}W$nDhie2xW!9JB;F">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="u7[/CVK~Qkxm~3~mJ6Im">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <value name="BY">
+              <shadow type="math_number" id="hLiauLS)l;rHmu-uY:B/">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="neopixel_control_all" id="a~c)`8nE];VFx5OYou4H">
+                <value name="color">
+                  <block type="lists_getIndex" id="El9TMi|7f:hc_{5ryg~{">
+                    <mutation statement="false" at="true"></mutation>
+                    <field name="MODE">GET</field>
+                    <field name="WHERE">FROM_START</field>
+                    <value name="VALUE">
+                      <block type="variables_get" id="]nB[P}|0x^+5q^u-y~U0">
+                        <field name="VAR" id="1Y!?U7/9.cL:2-^KHqP3">col</field>
+                      </block>
+                    </value>
+                    <value name="AT">
+                      <block type="variables_get" id="4:RAGjTb1#Se@=wbUfG4">
+                        <field name="VAR" id="px7f4]a{l)sC1LARI=tD">i</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="neopixel_write" id="3)K7HVW!~ISH]lEf3K}!">
+                    <next>
+                      <block type="delay_ms" id="ilx6ry6Bv[*[$-b5I)/{">
+                        <value name="time">
+                          <shadow type="math_number" id="HeNg*%ygr:DC=j7xvscb">
+                            <field name="NUM">500</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="neopixel_control_all" id="vzS~{{xO9sXSldcS7[Lz">
+                            <value name="color">
+                              <block type="neopixel_color_numbers" id="H~]TMHOHlNeeqdO.^(~v">
+                                <value name="red">
+                                  <shadow type="math_number" id="xRXry3hfS!S#jeP8jm)d">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <value name="green">
+                                  <shadow type="math_number" id="%r*EVSb8++Eqkt@_P^j_">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <value name="blue">
+                                  <shadow type="math_number" id="i5g|?Y8ZmB`on[ke%6*`">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="neopixel_write" id="WE_ie;}CQ5^n]FQqbzcl">
+                                <next>
+                                  <block type="delay_ms" id="SRu960~Gq|9X2WOVMybk">
+                                    <value name="time">
+                                      <shadow type="math_number" id="2xgy+)!q:Cj^nO3`9/XC">
+                                        <field name="NUM">500</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="project_metadata" id=")fcZL[M0]_i]ntK/|?|5" x="-237" y="-38">
+    <value name="project_author">
+      <shadow type="text" id="Ag/:ogn-16}6ok8gW7t[">
+        <field name="TEXT">user</field>
+      </shadow>
+    </value>
+    <value name="project_description">
+      <shadow type="text" id="j==w.|N@B+M^]~T].L(B">
+        <field name="TEXT">3色が変わりながら点滅</field>
+      </shadow>
+    </value>
+  </block>
+</xml>
