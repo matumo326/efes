@@ -1,0 +1,1 @@
+from machine import Pinimport timepIn28=Pin(28, Pin.IN)def touchget(threshold):    dif_time = 0    Pin(26, Pin.OUT).on()    st_time = time.ticks_us()    while (pIn28.value()) != True:        dif_time = (time.ticks_us()) - st_time    Pin(26, Pin.OUT).off()    if dif_time > threshold:        res = True    else:        res = False    return res
