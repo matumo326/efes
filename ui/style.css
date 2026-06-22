@@ -92,7 +92,7 @@ h1 {
 .top-menu > .logo {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 0;
   font-weight: 600;
   line-height: 1.125;
   color: #3298dc;
@@ -115,6 +115,7 @@ h1 {
   width: 100%;
   overflow-x: auto;
   padding: .5rem 0;
+  font-size:0.8rem
 }
 .top-menu #channel_connect {
   display: flex;
@@ -610,7 +611,7 @@ pre.content {
 }
 
 /* Toolbar */
-@media (min-width: 60em) {
+@media (min-width: 30em) {
   .top-menu > .toolbar {
     display: flex;
     height: 2.125rem;
@@ -619,7 +620,7 @@ pre.content {
     display: none;
   }
 }
-@media (max-width: 59.99em) {
+@media (max-width: 29.99em) {
   .top-menu > .toolbar {
     box-sizing: border-box;
     z-index: 999;
@@ -678,7 +679,7 @@ button.icon:before, #deviceSelect.icon:before, a.icon:before, span.icon:before, 
   content:"";
   background-size: cover;
   background-image: url(media/icons.svg);
-  width: 1.5rem;
+  width: 1.3rem;
   height: 1.5rem;
   background-size: auto 3rem;
 }
@@ -798,15 +799,15 @@ button.icon.medium:before  {
   line-height: inherit;
   height: 2rem;
   color: #327ae7;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
 #device_selector:focus {
   color: #000;
 }
-@media (max-width: 59.99em) {
+@media (max-width: 29.99em) {
   #device_selector {
-    width: 15rem;
+    width: 5.0rem;
   }
 }
 /* Run button */
